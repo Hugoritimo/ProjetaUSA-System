@@ -243,3 +243,57 @@ ul { list-style: none; padding: 0; margin: 0; }
 .scroll-top { position: fixed; right: 15px; bottom: 15px; background: var(--color-primary); color: #fff; width: 40px; height: 40px; border-radius: 4px; z-index: 999; transition: 0.3s; display: flex; align-items: center; justify-content: center; }
 .scroll-top:hover { background: var(--color-secondary); }
 @keyframes spin { 100% { transform: rotate(360deg); } }
+
+/* --- CLIENTS SECTION (NOVO ESTILO "PRO") --- */
+.clients-section {
+  padding: 80px 0;
+  background-color: #f7f9fc; /* Fundo cinza bem claro para destacar os cards */
+}
+
+.clients-grid .client-item {
+  background: #fff;
+  padding: 30px 15px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+.clients-grid .client-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(175, 27, 27, 0.15); /* Sombra vermelha suave */
+  border-color: var(--color-primary);
+}
+
+.clients-grid .client-item i {
+  font-size: 32px;
+  color: #ccc;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.clients-grid .client-item:hover i {
+  color: var(--color-primary);
+}
+
+.clients-grid .client-item h5 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--color-secondary);
+  font-family: var(--font-heading);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+  .clients-grid .client-item { padding: 20px 10px; }
+  .clients-grid .client-item h5 { font-size: 14px; }
+}
