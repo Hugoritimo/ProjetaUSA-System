@@ -75,18 +75,18 @@
   </section>
 
   <main id="main">
-
     <section id="about-preview" class="about-preview">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 animate-on-scroll">
             <div class="content">
-              <span class="badge-industrial" style="background: transparent; color: var(--color-primary); padding: 0; margin-bottom: 10px;">OUR HERITAGE</span>
-              <h3>BORN FROM <span style="color: var(--color-primary);">PROJETA BR</span></h3>
+              <span class="badge-industrial" style="background: transparent; color: var(--color-primary); padding: 0; margin-bottom: 10px;">OUR MISSION</span>
               
-              <p class="lead">Projeta USA brings the legacy of <strong>Projeta Engenharia (Brazil)</strong> to the American market, combining decades of high-complexity engineering expertise.</p>
+              <h3>BUILDING WITH <span style="color: var(--color-primary);">EXCELLENCE</span></h3>
               
-              <p><strong>What we do:</strong> We specialize in <em>Framing, Insulation, Drywall, and Acoustic Ceilings</em>. We offer projects that use modern, intelligent, and efficient structures.</p>
+              <p class="lead">Projeta USA is dedicated to delivering high-performance construction solutions across Florida.</p>
+              
+              <p><strong>What we do:</strong> We specialize in <em>Framing, Insulation, Drywall, and Acoustic Ceilings</em>. We focus on precision, safety, and efficiency to meet the rigorous demands of the modern market.</p>
               
               <div class="mt-4 mb-4">
                 <h5 style="color: var(--color-secondary); font-weight: 700; text-transform: uppercase;">Our Core Values (The 4 H's):</h5>
@@ -98,11 +98,11 @@
                 </ul>
               </div>
 
-              <div class="d-flex align-items-center p-3 border rounded bg-white shadow-sm mb-4" style="max-width: 350px;">
+              <div class="d-flex align-items-center p-3 border rounded bg-white shadow-sm mb-4" style="max-width: 380px;">
                 <img src="assets/img/iso.png" alt="ISO Certification" style="height: 55px; width: auto; margin-right: 15px;">
                 <div style="line-height: 1.2;">
                   <span style="display: block; font-weight: 800; color: var(--color-secondary); letter-spacing: 1px;">ISO CERTIFIED</span>
-                  <span style="font-size: 13px; color: #666;">International Quality Standards</span>
+                  <span style="font-size: 13px; color: #666;">Legacy of Quality from <strong>Projeta BR</strong></span>
                 </div>
               </div>
 
@@ -111,7 +111,7 @@
           </div>
           
           <div class="col-lg-6 animate-image-reveal delay-200">
-            <div class="img-wrapper" style="background-image: url('assets/img/modulo.jpeg'); min-height: 500px;"></div>
+            <div class="img-wrapper" style="background-image: url('assets/img/projects/obra7.jpg'); min-height: 500px;"></div>
           </div>
         </div>
       </div>
@@ -289,7 +289,7 @@
 
   </main>
 
-  <footer id="footer" class="footer">
+<footer id="footer" class="footer">
     <div class="footer-content">
       <div class="container">
         <div class="row">
@@ -298,7 +298,8 @@
             <div class="footer-info">
               <h3>PROJETA USA<span class="dot">.</span></h3>
               <p>
-                13127 TOLLCROSS WAY, WINTER GARDEN, FL 34787<br>
+                13127 TOLLCROSS WAY<br>
+                WINTER GARDEN, FL 34787<br><br>
                 <strong>Phone:</strong> +1 (863) 277-9306<br>
                 <strong>Phone:</strong> +1 (407) 653-2510<br>
                 <strong>Email:</strong> projetausa@projetacs.com<br>
@@ -324,6 +325,7 @@
               <li><a href="about.html">About us</a></li>
               <li><a href="services.html">Services</a></li>
               <li><a href="projects.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
 
@@ -348,13 +350,7 @@
               </p>
             </div>
 
-            <h4 class="mt-4">Follow Us</h4>
-            <div class="social-links d-flex mt-3">
-              <a href="#" class="d-flex align-items-center justify-content-center me-2" style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; color: #fff; transition: 0.3s;"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="d-flex align-items-center justify-content-center me-2" style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; color: #fff; transition: 0.3s;"><i class="bi bi-linkedin"></i></a>
-              <a href="#" class="d-flex align-items-center justify-content-center me-2" style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; color: #fff; transition: 0.3s;"><i class="bi bi-facebook"></i></a>
-            </div>
-          </div>
+
 
         </div>
       </div>
@@ -385,16 +381,14 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // Verifica se o elemento do mapa existe
       if(document.getElementById('projects-map')) {
-        // Centraliza o mapa para mostrar Orlando e arredores
+        // Centraliza o mapa
         var map = L.map('projects-map').setView([28.3, -81.3], 8); 
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; OpenStreetMap contributors'
         }).addTo(map);
 
-        // Ícone Vermelho Personalizado
         var projetaIcon = L.icon({
             iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
             shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
@@ -404,7 +398,7 @@
             shadowSize: [41, 41]
         });
 
-        // LISTA DE OBRAS REAIS COM COORDENADAS
+        // LISTA DE OBRAS REAIS
         var locations = [
             { name: "<b>JPM Chase Retail Banking</b><br>Corner Lakes - 16884 E Colonial Dr, Orlando", lat: 28.5630, lng: -81.1340 },
             { name: "<b>Universal Pizza Predittoria</b><br>1000 Universal Studios Plaza, Orlando", lat: 28.4735, lng: -81.4650 },
@@ -415,7 +409,6 @@
             { name: "<b>Sage Dental</b><br>4140 E Johnson Ave, Haines City", lat: 28.1130, lng: -81.6020 }
         ];
 
-        // Adiciona os marcadores
         locations.forEach(function(loc) {
             L.marker([loc.lat, loc.lng], {icon: projetaIcon})
               .addTo(map)
